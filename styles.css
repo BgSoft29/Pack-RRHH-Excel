@@ -1,0 +1,239 @@
+/* Base y Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Fondo Oscuro Principal */
+    color: #f0f0f0; 
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: #0f0f1a;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Cards y Diseño General */
+.card {
+    background-color: #252643;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+/* Hero Section (Oferta Principal) - DEFAULT: FLEX ROW (Desktop) */
+#hero {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 30px;
+}
+
+.pack-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+}
+
+.primary-card {
+    border: 3px solid #64ffda; 
+}
+
+.content-left {
+    flex: 1;
+    text-align: center;
+}
+
+.content-right {
+    flex: 1;
+}
+
+/* Precios */
+.price-box {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.1em;
+    display: block;
+}
+
+.new-price {
+    font-size: 2.8em;
+    color: #64ffda;
+    font-weight: bold;
+    display: block;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #25d366; 
+    color: #0f0f1a; 
+    padding: 8px 8px;
+    margin: 20px 0;
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 1.5em;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #4dfb8b;
+    transform: translateY(-3px);
+}
+
+/* Animación de Pulso */
+.pulse-effect {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(100, 255, 218, 0.7); }
+    70% { box-shadow: 0 0 0 20px rgba(100, 255, 218, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(100, 255, 218, 0); }
+}
+
+/* Contador */
+.timer-box {
+    text-align: center;
+    background-color: #490e23;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ff4d4d;
+}
+
+.countdown {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.guarantee {
+    text-align: center;
+    font-style: italic;
+    color: #64ffda;
+    font-size: 1em;
+}
+
+/* --- Estilos para Logos de Pago (Yape, Plin) --- */
+
+.payment-logos {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-top: 1px solid #333350; /* Separador sutil */
+    padding-top: 15px;
+}
+
+.payment-logos p {
+    font-weight: 600;
+    color: #aaaaaa;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.payment-logo {
+    max-height: 30px; 
+    width: auto;
+    margin: 0 8px;
+    filter: grayscale(20%); 
+    transition: filter 0.3s;
+}
+
+.payment-logo:hover {
+    filter: none; 
+}
+
+
+/* Secciones Generales */
+h2 {
+    text-align: center;
+    color: #64ffda;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333350;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.benefit-item {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.benefit-item h3 {
+    color: #ffcc00;
+    font-size: 1.4em;
+}
+
+.content-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.content-list li {
+    background-color: #2e2e4e;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #64ffda;
+    border-radius: 6px;
+    font-size: 1.1em;
+}
+
+.content-list i {
+    color: #64ffda;
+    margin-right: 10px;
+}
+
+/* --- Estilos de la Galería/Carrusel (#gallery) --- */
+.subtitle-gallery {
+    text-align: center;
+    color: #aaaaaa;
+    margin-bottom: 25px;
+}
