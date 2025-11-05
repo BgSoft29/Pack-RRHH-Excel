@@ -94,14 +94,13 @@ header h1 {
 /* Botón de WhatsApp */
 .whatsapp-button {
     display: block;
-    width: 100%;
     text-align: center;
     background-color: #25d366; 
     color: #0f0f1a; 
-    padding: 8px 8px;
+    padding: 18px 20px;
     margin: 20px 0;
     text-decoration: none;
-    border-radius: 35px;
+    border-radius: 50px;
     font-size: 1.5em;
     font-weight: 700;
     transition: background-color 0.3s, transform 0.3s;
@@ -236,4 +235,23 @@ h2 {
     text-align: center;
     color: #aaaaaa;
     margin-bottom: 25px;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+
+}
+@media (max-width: 450px) {
+    #hero{
+        display: block;
+    };
+    
 }
